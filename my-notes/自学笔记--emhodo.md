@@ -30,3 +30,18 @@ One has no future if one couldn't teach themself
 - 有能力只靠阅读就能习得新技能。
 - 自己生活工作学习上遇到的所有疑问，书本里应该都有答案 —— 起码有所参考。
 - 绝大多数情况下，没人能教你，也不一定有人愿意教你…… 到最后，你想学会或你必须学会什么东西的时候，你只能靠阅读！ —— 因为其实你谁都靠不上……
+
+>有关git
+
+状态 	    说明	                    对应命令
+Untracked	未被 Git 管理的文件	    git add 文件名
+Modified	修改了但没 add	        git add 文件名
+Staged	    已 add，未提交	        git commit -m "说明"
+Committed	已成功提交	            无需操作
+查看当前状态	当前哪些文件处于什么状态	git status
+查看更改内容	和上次相比改了什么	        git diff / git diff --cached
+撤销 add	    把文件从暂存区退回	        git reset HEAD 文件名
+撤销本地修改	恢复为上一次提交的状态	    git checkout -- 文件名
+回退到旧版本	检出旧提交版本	        git checkout 提交ID
+
+
